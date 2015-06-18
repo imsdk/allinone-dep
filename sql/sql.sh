@@ -6,7 +6,7 @@ sqlfile="/opt/sql/imsdk.sql"
 rootuser=root
 rootpwd="root"
 
-${ex} -u${rootuser} -s -e \
+${ex} -u${rootuser} -p${rootpwd} -s -e \
 "
 create database imsdk charset=utf8;
 grant all privileges on imsdk.* to 'imsdk'@'127.0.0.1' identified by 'imsdk';
